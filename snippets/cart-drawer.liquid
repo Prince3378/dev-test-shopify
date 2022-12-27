@@ -7,11 +7,11 @@
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
-{% comment %} <style>
+<style>
   .drawer {
     visibility: hidden;
   }
-</style> {% endcomment %}
+</style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
   <div id="CartDrawer" class="cart-drawer">
