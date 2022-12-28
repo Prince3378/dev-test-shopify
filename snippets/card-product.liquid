@@ -19,6 +19,8 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+<script src="{{ 'custom-js.js' | asset_url }}" defer="defer"></script>
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -153,9 +155,27 @@
           </h3>
           <div class="card-information">
             <div class="custom__just-wrapper">
-              <div class="custom__just">
-              Just once
-            </div>
+                  {%- if card_product.options[0] != 'dis' -%}
+                  <div class="custom__just active percent">
+                      {{ card_product.options[0] }}
+                    </div>
+                  {%- endif -%}
+  
+              
+                  {%- if card_product.options[1] -%}
+                    <div class="custom__just w   {%- if card_product.options[0] != 'dis' -%}
+                       ith-hendler
+                    {%- endif -%} ">
+                        {{ card_product.options[1] }}
+                      </div>
+                    {%- endif -%}
+
+                  {%- if card_product.options[2] == '-20%' -%}
+                    <div class="custom__just-red">
+                       {{ card_product.options[2] }}
+                    </div>
+                  {%- endif -%}
+  
            </div>
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>

@@ -83,11 +83,13 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
+  margin-right: 10px;
   margin-bottom: 20px;
   padding: 7px 23px;
   background-color: #f5f5f5;
   border-radius: 40px;
   color: #464B90;
+  cursor: pointer;
 }
 
 .button__wrapper {
@@ -99,4 +101,24 @@
 .custom__just-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.custom__just-red {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 7px 23px;
+  background-color: #F5C9C9;
+  border-radius: 40px;
+  color: #EB5757;
+}
+
+.active {
+  padding: 11px 25px;
+  color: #464B90;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.11);
+  border-radius: 40px;
 }
