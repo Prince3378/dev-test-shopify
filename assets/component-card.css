@@ -89,7 +89,7 @@
 }
 
 .card .media {
-/*   width: 100%; */
+  width: 100%;
 }
 
 .card__media {
@@ -162,7 +162,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
-/*   width: 100%; */
+  width: 100%;
 }
 
 .card__inner:not(.ratio) > .card__content {
@@ -279,7 +279,7 @@
 }
 
 .card-information {
-/*   width: 100%; */
+  width: 100%;
 }
 
 .card-information > * {
