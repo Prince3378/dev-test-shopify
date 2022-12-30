@@ -1012,6 +1012,7 @@ summary::-webkit-details-marker {
 /* component-grid */
 .grid {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 2rem;
   padding: 0;
