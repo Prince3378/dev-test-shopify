@@ -101,10 +101,10 @@
   margin: var(--image-padding);
 }
 
-.card__inner {
+/* .card__inner {
   width: 520px;
   height: 340px;
-}
+} */
 
 .card--media .card__inner .card__content {
   position: relative;
